@@ -65,12 +65,13 @@ struct hwk01: View {
 }
 
 extension Color {
-    static let lime = Color(red: 173/255, green: 216/255, blue: 230/255) // Define light blue color
+    static let Lime = Color(red: 173/255, green: 216/255, blue: 230/255) // Define light blue color
 }
 
 #Preview {
     hwk01()
 }
+
 
 
 
