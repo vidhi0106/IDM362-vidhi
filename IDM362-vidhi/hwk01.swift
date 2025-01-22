@@ -27,6 +27,7 @@ struct hwk01: View {
                 Text("Hi, my name is Vidhi!")
                     .font(.title)
                     .fontWeight(.bold)
+                    .foregroundColor(Color.black)
                     .multilineTextAlignment(.center)
                 
                 Image("self")
@@ -69,14 +70,6 @@ extension Color {
 
 #Preview {
     hwk01()
-}
-
-struct landscape_Previews: PreviewProvider {
-    static var previews: some View {
-        hwk01()
-
-            .previewInterfaceOrientation(.landscapeRight) // Specify landscape orientation
-    }
 }
 
 
