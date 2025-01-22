@@ -11,7 +11,7 @@ import SwiftUI
 struct IDM362_vidhiApp: App {
     var body: some Scene {
         WindowGroup {
-            hwk01()
+            ContentView()
         }
     }
 }
