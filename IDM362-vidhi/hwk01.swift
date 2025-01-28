@@ -60,12 +60,12 @@ struct hwk01: View {
     // Function to change the background color
     func changeBackgroundColor() {
         // Toggle between white and light blue
-        backgroundColor = (backgroundColor == .white) ? .lime : .white
+        backgroundColor = (backgroundColor == .white) ? .blue : .white
     }
 }
 
 extension Color {
-    static let Lime = Color(red: 173/255, green: 216/255, blue: 230/255) // Define light blue color
+    static let Blue = Color(red: 173/255, green: 216/255, blue: 230/255) // Define light blue color
 }
 
 #Preview {
