@@ -12,7 +12,7 @@ struct ContentView: View {
         ("rainy", "Rainy", Color(red: 0.9333333333333333, green: 0.8235294117647058, blue: 1.0)),
         ("stormy", "Stormy", Color(red: 1.0, green: 0.7372549019607844, blue: 0.9098039215686274))
     ]
-    // comment 
+     
 
     var body: some View {
         
