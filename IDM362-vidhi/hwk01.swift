@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
-//  IDM362-vidhi
+//  hwk01.swift
+//  IDM362-vps43
 //
-//  Created by Vidhi Shah  on 1/20/25.
+//  Created by Vidhi Shah on 1/20/25.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct hwk01: View {
     // State variable to manage background color
     @State private var backgroundColor: Color = .white
     
@@ -60,15 +60,18 @@ struct ContentView: View {
     // Function to change the background color
     func changeBackgroundColor() {
         // Toggle between white and light blue
-        backgroundColor = (backgroundColor == .white) ? .lime : .white
+        backgroundColor = (backgroundColor == .white) ? .blue : .white
     }
 }
 
 extension Color {
-    static let lime = Color(red: 173/255, green: 216/255, blue: 230/255) // Define light blue color
+    static let blue = Color(red: 173/255, green: 216/255, blue: 230/255) // Define light blue color
 }
-
 
 #Preview {
-    ContentView()
+    hwk01()
 }
+
+
+
+
