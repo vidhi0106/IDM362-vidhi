@@ -55,6 +55,7 @@ struct CalendarView: View {
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundStyle(Color("AccentColor"))
+                        .frame(width: 200)
                     
                     Button(action: { changeMonth(by: 1) }) {
                         Image(systemName: "chevron.right.circle.fill")
@@ -83,18 +84,21 @@ struct CalendarView: View {
                         if let day = day {
                             let dateKey = dateString(from: day)
                             let emotion = fakeEmotionLog[dateKey]
-                            let backgroundColor = emotion != nil ? emotionColors[emotion!] : Color.clear
+                            let backgroundColor = emotion != nil ? emotionColors[emotion!] : Color.gray
                             
                             VStack {
                                 Text("\(calendar.component(.day, from: day))")
                                     .font(.caption)
+                                    .foregroundStyle(Color.black)
                                 
                                 // Fixed space for mood emoji (empty if no mood is logged)
                                 if let emotion = emotion {
+                                    
                                     Image(emotion)
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 50, height: 50)
+                                    
                                     
                                 } else {
                                     Text(" ") // Keeps layout intact
@@ -108,13 +112,13 @@ struct CalendarView: View {
                         } else {
                             Rectangle()
                                 .fill(Color.clear)
-                                .frame(width: 40, height: 80)
+                                .frame(width: 50, height: 80)
                         }
                     }
                 }
                 .frame(height: 500)
             }
-            .padding()
+//            .padding()
             Spacer()
         }
     }

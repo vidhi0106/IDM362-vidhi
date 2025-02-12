@@ -27,11 +27,11 @@ struct MainView: View {
                 }
                 .tag(1) // Unique tag
             
-            Text("Report Tab")
-                .tabItem {
-                    Label("Report", systemImage: "chart.bar.fill")
-                }
-                .tag(2) // Unique tag
+//            Text("Report Tab")
+//                .tabItem {
+//                    Label("Report", systemImage: "chart.bar.fill")
+//                }
+//                .tag(2) // Unique tag
         }
         .tint(Color("AccentColor"))
         .environmentObject(userData)

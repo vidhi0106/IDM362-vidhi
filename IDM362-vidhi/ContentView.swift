@@ -16,25 +16,12 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            
-            HStack{
-                //            Image("backfinal")
-                //                .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
-                //                .foregroundColor(Color.primary)
-                //                .frame(width: 60.0, height: 60.0)
-                //Spacer()
+            VStack {
                 Text("MoodCloud")
                     .font(.title)
-                    .fontWeight(.bold)
-                    .frame(maxWidth:.infinity)
                     .multilineTextAlignment(.center)
-                
-                
-            }
-            .padding()
-            
-            
-            VStack {
+                    .fontWeight(.bold)
+                    .padding(10)
                 
                 Text("Pick the cloud that matches your mood!")
                     .font(.title3)
@@ -89,8 +76,9 @@ struct ContentView: View {
                 //                    .font(.headline)
                 //                    .padding()
                 //            }
-                Spacer()
+//                
             }
+            Spacer()
             
         }
     }
